@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-carausal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carausal-banner {
+    height: 550px;
+    width: 60vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    animation-name: carausal-image;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carausal-image {
+    0% {
+        background-image: url("https://images.pexels.com/photos/2131614/pexels-photo-2131614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+    20% {
+        background-image: url("https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+    40% {
+        background-image: url("https://images.pexels.com/photos/1468555/pexels-photo-1468555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+    60% {
+        background-image: url("https://images.pexels.com/photos/1716158/pexels-photo-1716158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+    80% {
+        background-image: url("https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+    100% {
+        background-image: url("https://images.pexels.com/photos/29877071/pexels-photo-29877071/free-photo-of-breathtaking-swiss-alps-sunset-in-winter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+}
