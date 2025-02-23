@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barmand {
+    width: 500px;
+    aspect-ratio: 1;
+    background-color: thistle;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: barmand-rang 10s linear infinite;
+}
+
+.shuriya {
+    width: 200px;
+    aspect-ratio: 1;
+    background: linear-gradient(rgb(250, 132, 2), rgb(250, 150, 7), rgb(252, 176, 51), rgb(254, 204, 81), rgb(255, 228, 105), rgb(255, 245, 123));
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.shuriya::after {
+    content: "";
+    width: inherit;
+    aspect-ratio: 1;
+    border-radius: inherit;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: linear-gradient(rgb(240, 239, 226), rgb(224, 224, 213), rgb(208, 208, 202), rgb(193, 192, 187), rgb(177, 177, 172), rgb(161, 161, 156));
+    animation: chandraGaran 10s ease-in-out infinite;
+}
+
+@keyframes chandraGaran {
+    0% {
+        translate: 100%;
+        scale: 1;
+    }
+    50% {
+        translate: 0%;
+        scale: 0.95;
+    }
+    100% {
+        translate: -100%;
+        scale: 1;
+    }
+}
+
+@keyframes barmand-rang {
+
+    0% {
+        background-color: #FA961B;
+    }
+    25% {
+        background-color: #FFE469;
+    }
+    50% {
+        background-color: #000;
+    }
+    75% {
+        background-color: #FFE469;
+    }
+    100% {
+        background-color: #FA961B;
+    }
+}
