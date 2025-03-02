@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-heading-color: #1A2D62;
+    --secondary-heading-color: #2ECA7F;
+    --nav-bg-color: #ffffff;
+    --btn-1-bg-color: #2ECA7F;
+    --white-color: #ffffff;
+    --btn-2-bg-color: #1A2D62;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+li, a, i {
+    font-size: 1.9rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-heading-color);
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.nav-section {
+    display: flex;
+    background-color: var(--nav-bg-color);
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.nav-section .nav-logo img {
+    width: 150px;
+}
+
+.nav-section .navbar ul {
+    display: flex;
+    gap: 3rem;
+}
+
+
+.nav-section .navbar ul a:hover, .nav-section .navbar ul li i:hover {
+    color: var(--secondary-heading-color);
+}
+
+.nav-section .nav-content {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-section .nav-content .cart-content {
+    display: flex;
+    gap: 5rem;
+    cursor: pointer;
+}
+
+.nav-section .nav-content .cart-content i {
+    font-size: 2.4rem;
+    position: relative;
+}
+
+.nav-section .nav-content .cart-content .heart-icon i::after {
+    content: '0';
+    position: absolute;
+    top: -50%;
+    font-size: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.3rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    background-color: var(--secondary-heading-color);
+}
+.nav-section .nav-content .cart-content .add-to-cart i::after {
+    content: '2';
+    position: absolute;
+    top: -50%;
+    font-size: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-left: 0.3rem;
+    text-align: center;
+    color: white;
+    background-color: var(--secondary-heading-color);
+}
+
+.nav-section .nav-content .account-content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.account-content .btn {
+    padding: 1rem 3rem;
+    border: none;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.account-content .btn-1 {
+    background-color: var(--btn-1-bg-color);
+    color: var(--white-color);
+}
+
+.account-content .btn-1:hover {
+    background-color: var(--btn-2-bg-color);
+    color: var(--white-color);
+}
+
+.account-content .btn-2 {
+    border: 0.1rem solid gray;
+    color: var(--btn-2-bg-color);
+}
+
+.account-content .btn-2:hover {
+    background-color: var(--btn-1-bg-color);
+    color: var(--white-color);
+    border: none;
+}
