@@ -11,6 +11,7 @@
     --btn-1-bg-color: #2ECA7F;
     --white-color: #ffffff;
     --btn-2-bg-color: #1A2D62;
+    --para-text-color: #888888;
 }
 
 html {
@@ -18,10 +19,17 @@ html {
 }
 
 li, a, i {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     list-style: none;
     text-decoration: none;
     color: var(--main-heading-color);
+}
+
+.para {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--para-text-color);
+    margin-bottom: 2rem;
 }
 
 .container {
@@ -68,7 +76,7 @@ li, a, i {
 }
 
 .nav-section .nav-content .cart-content i {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     position: relative;
 }
 
@@ -136,4 +144,57 @@ li, a, i {
     background-color: var(--btn-1-bg-color);
     color: var(--white-color);
     border: none;
+}
+
+/* Hero section Start */
+
+.hero-section-content .hero-section-left {
+    width: 40%;
+}
+
+.hero-section-content .hero-section-left .main-heading {
+    font-size: 6.6rem;
+    color: var(--main-heading-color);
+    margin-bottom: 2rem;
+}
+
+.hero-section-content .hero-section-left .main-heading .highlight-text {
+    color: var(--secondary-heading-color);
+}
+
+
+.hero-section-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #DEF5F3, #F8F9F9, #FFF2F3, #FFF0F2);
+}
+
+.section-content .hero-section-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-section-right .hero-section-img {
+    position: relative;
+    top: 10rem;
+}
+
+.hero-section-right .hero-section-img img {
+    width: 90%;
+    height: auto;
+    position: relative;
+}
+
+.hero-section-content .hero-section-left .hero-section-btn .btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: inherit;
+    transition: all 0.5s linear;
+}
+
+.hero-section-content .hero-section-left .hero-section-btn .btn:hover {
+    background-color: var(--secondary-heading-color);
 }
