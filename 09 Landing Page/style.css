@@ -5,6 +5,7 @@
 }
 
 :root {
+    --main-bg-color: linear-gradient(to right, #DEF5F3, #F8F9F9, #FFF2F3, #FFF0F2);
     --main-heading-color: #1A2D62;
     --secondary-heading-color: #2ECA7F;
     --nav-bg-color: #ffffff;
@@ -12,15 +13,14 @@
     --white-color: #ffffff;
     --btn-2-bg-color: #1A2D62;
     --para-text-color: #888888;
+    --border-bg-color: #b7b6b6;
+    --icon-bg-color: #acf3d0;
 }
 
 html {
    font-size: 62.5%;
 }
 
-body {
-    background: linear-gradient(to right, #DEF5F3, #F8F9F9, #FFF2F3, #FFF0F2);
-}
 
 .btn {
     padding: 1.5rem 3rem;
@@ -51,6 +51,11 @@ li, a, i {
     font-size: 1.8rem;
     color: var(--para-text-color);
     margin-bottom: 2rem;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    color: var(--main-heading-color);
 }
 
 .container {
@@ -187,7 +192,7 @@ li, a, i {
 .hero-section-container {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #DEF5F3, #F8F9F9, #FFF2F3, #FFF0F2);
+    background: var(--main-bg-color);
 }
 
 .section-content .hero-section-content {
@@ -266,6 +271,8 @@ li, a, i {
     margin-bottom: 0.5rem;
 } 
 
+.btn
+
 .section-notice-right div i, .section-notice-left div i {
     color: var(--btn-1-bg-color);
     font-size: 3rem;
@@ -277,18 +284,22 @@ li, a, i {
     top: 7rem;
 }
 
+/* Advertise Section */
+
+.advertise-section {
+    background: var(--main-bg-color);
+    padding-bottom: 5rem;
+}
 
 .first-advertise-section {
-    
     display: flex;
     background-color: var(--nav-bg-color);
-    width: 205rem;
     justify-content: center;
     align-items: center;
     height: auto;
     gap: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin-bottom: 2rem;
+    margin: 0 2rem;
 }
 
 .first-advertise-section .first-item-content, .first-advertise-section .second-item-content {
@@ -296,7 +307,93 @@ li, a, i {
     padding: 6rem;
 }
 
-.first-advertise-section .card-container .sub-heading {
-    font-size: 2rem;
-    color: var(--main-heading-color);
+.card-container .btn {
+    padding-left: 0 2rem ;
+    background-color: var(--icon-bg-color);
+    color: var(--btn-2-bg-color);
+}
+
+.card-container .btn:hover {
+    background-color: var(--btn-1-bg-color);
+    color: var(--white-color);
+}
+
+
+/* Career Section */
+
+.career-section {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-bg-color); 
+}
+
+.career-container {
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 8rem 0 5rem 5rem;
+    gap: 6.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-container .career-content-left img {
+    width: 100%;
+    height: auto;
+
+}
+
+.career-content {
+    padding: 0 1.2rem;
+}
+
+.career-content-right .sub-heading {
+    font-size: 4.4rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.career-content-right .para {
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.career-content-right .sub-heading span{
+    color: var(--secondary-heading-color);
+    text-decoration: underline;
+}
+
+.career-div {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    border: 0.1rem solid var(--border-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.career-div .sub-heading {
+    font-size: 2.2rem;
+}
+
+.career-div .para {
+    margin: 0;
+}
+
+.career-div .carrer-icon i{
+    font-size: 2.2rem;
+    background-color: var(--icon-bg-color);
+    padding: 2.5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.career-btn .discover-btn {
+    background-color: var(--btn-1-bg-color);
+    color: var(--white-color);
+    transition: all 0.5s ease-in-out;
+}
+.career-btn .discover-btn:hover {
+    background-color: var(--btn-2-bg-color);
 }
