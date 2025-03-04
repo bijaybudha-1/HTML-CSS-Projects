@@ -15,6 +15,10 @@
     --para-text-color: #888888;
     --border-bg-color: #b7b6b6;
     --icon-bg-color: #acf3d0;
+    --smile-icon-color: #4154f1;
+    --file-icon-color: #ee6c20;
+    --headphone-icon-color: #15be56;
+    --user-icon-color: #bb0852;
 }
 
 html {
@@ -289,6 +293,8 @@ li, a, i {
 .advertise-section {
     background: var(--main-bg-color);
     padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .first-advertise-section {
@@ -304,6 +310,10 @@ li, a, i {
 
 .first-advertise-section .first-item-content, .first-advertise-section .second-item-content {
     border-right: 0.2rem solid var(--para-text-color);
+    padding: 6rem;
+}
+
+.first-advertise-section .third-item-content {
     padding: 6rem;
 }
 
@@ -402,3 +412,84 @@ li, a, i {
 .career-btn .discover-btn:hover {
     background-color: var(--btn-2-bg-color);
 }
+
+/* achivement Section*/
+
+.achivement-container {
+    padding: 8rem 0;
+}
+
+.achivement-card {
+    display: flex;
+    gap: 3rem;
+    height: auto;
+    margin: 0 2rem;
+}
+
+.achivement-heading .achivement-para {
+    color: var(--btn-1-bg-color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.achivement-heading .achivement-para::after {
+    content: "";
+    width: 12rem;
+    height: 0.2rem;
+    display: inline-block;
+    background: #2eca7f;
+    margin: 4px 10px;
+}
+
+.achivement-heading .achivement-sub-heading {
+    font-size: 4.4rem;
+    text-transform: capitalize;
+    margin-bottom: 6rem;
+}
+
+.achivement-heading .achivement-sub-heading span {
+    color: var(--secondary-heading-color);
+    text-decoration: underline;
+}
+
+.achivement-container .achivement-content {
+    background-color: var(--white-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.achivement-container .achivement-content .card-icon .fa-face-smile{
+    font-size: 4.2rem;
+    color: var(--smile-icon-color);
+}
+.achivement-container .achivement-content .card-icon .fa-file {
+    font-size: 4.2rem;
+    color: var(--file-icon-color);
+}
+.achivement-container .achivement-content .card-icon  .fa-headphones-simple{
+    font-size: 4.2rem;
+    color: var(--headphone-icon-color);
+}
+.achivement-container .achivement-content .card-icon  .fa-user-tie{
+    font-size: 4.2rem;
+    color: var(--user-icon-color);
+}
+
+.achivement-container .card-title {
+    margin-left: 1.5rem;
+}
+.achivement-container .card-title .card-heading {
+    font-size: 3.6rem;
+}
+.achivement-container .card-title .para {
+    margin: 1rem 0 0 0;
+}
+
+
+
+
+
+
