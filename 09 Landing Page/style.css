@@ -18,6 +18,27 @@ html {
    font-size: 62.5%;
 }
 
+body {
+    background: linear-gradient(to right, #DEF5F3, #F8F9F9, #FFF2F3, #FFF0F2);
+}
+
+.btn {
+    padding: 1.5rem 3rem;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: var(--btn-1-bg-color);
+    color: var(--white-color);
+}
+
 li, a, i {
     font-size: 1.8rem;
     list-style: none;
@@ -173,17 +194,19 @@ li, a, i {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 3rem;
 }
 
-.hero-section-right .hero-section-img {
+.hero-section-right {
     position: relative;
     top: 10rem;
+
 }
 
 .hero-section-right .hero-section-img img {
     width: 90%;
     height: auto;
-    position: relative;
+
 }
 
 .hero-section-content .hero-section-left .hero-section-btn .btn {
@@ -197,4 +220,83 @@ li, a, i {
 
 .hero-section-content .hero-section-left .hero-section-btn .btn:hover {
     background-color: var(--secondary-heading-color);
+}
+
+.hero-section-notice {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    gap: 3rem;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.hero-section-notice .section-notice {
+    background-color: var(--nav-bg-color);
+    padding: 1.5rem 3rem;
+    width: 20rem;
+    border-radius: 2rem;
+    color: var(--main-heading-color);
+    
+}
+
+.section-notice .sub-heading {
+    font-size: 3.3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.section-notice .para {
+    margin: 0;
+}
+
+
+.hero-section-notice .section-notice-right {
+    position: relative;
+    right: -5rem;
+    bottom: 20rem;
+}
+
+.hero-section-notice .section-notice-right div, .hero-section-notice .section-notice-left div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+} 
+
+.section-notice-right div i, .section-notice-left div i {
+    color: var(--btn-1-bg-color);
+    font-size: 3rem;
+}
+
+.hero-section-notice .section-notice-left {
+    position: relative;
+    right: 18rem;
+    top: 7rem;
+}
+
+
+.first-advertise-section {
+    
+    display: flex;
+    background-color: var(--nav-bg-color);
+    width: 205rem;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 2rem;
+}
+
+.first-advertise-section .first-item-content, .first-advertise-section .second-item-content {
+    border-right: 0.2rem solid var(--para-text-color);
+    padding: 6rem;
+}
+
+.first-advertise-section .card-container .sub-heading {
+    font-size: 2rem;
+    color: var(--main-heading-color);
 }
