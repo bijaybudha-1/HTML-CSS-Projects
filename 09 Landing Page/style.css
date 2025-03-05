@@ -19,12 +19,12 @@
     --file-icon-color: #ee6c20;
     --headphone-icon-color: #15be56;
     --user-icon-color: #bb0852;
+    --sub-heading-bg-color: #dbf5e8;
 }
 
 html {
    font-size: 62.5%;
 }
-
 
 .btn {
     padding: 1.5rem 3rem;
@@ -457,6 +457,7 @@ li, a, i {
     padding: 2.5rem;
     margin-bottom: 3rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -488,8 +489,57 @@ li, a, i {
     margin: 1rem 0 0 0;
 }
 
+/* Trusted Company Section */
+.trusted-section .trusted-company-comntainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 8rem 0;
+}
+
+.trusted-section .trusted-heading {
+    margin-bottom: 6rem;
+    padding: 1rem;
+    background-color: var(--icon-bg-color);
+    border-radius: 3rem;
+}
+
+.trusted-sub-heading {
+    color: var(--secondary-heading-color);
+    font-size: 2.4rem;
+    width: 80vh;
+    text-align: center;
+}
+
+.trusted-section .trusted-company {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    overflow: hidden;
+}
+
+.trusted-section .trusted-company-list {
+    animation: right-to-left 15s linear infinite ;
+}
+
+.trusted-company-list {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation for logo goes right to left direction */
 
 
-
-
-
+@keyframes right-to-left {
+    0% {
+        transform: translate(100%);
+    }
+    50% {
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
