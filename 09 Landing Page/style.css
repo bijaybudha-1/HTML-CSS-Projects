@@ -556,17 +556,17 @@ padding: 8rem 0;
 /* feature Section */
 
 .feature-container {
-    padding: 8rem 0;
+    padding: 8rem 3rem;
 }
 
 .feature-card {
     display: flex;
     column-gap: 3rem;
     height: auto;
-    margin: 0 2rem;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 1.2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature-heading .feature-para {
@@ -602,7 +602,7 @@ padding: 8rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45rem;
+    width: 42rem;
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
 }
@@ -655,3 +655,91 @@ padding: 8rem 0;
 .feature-container .card-title .para {
     margin: 1rem 0 0 0;
 }
+/* Popular Courses Section */
+
+.courses-container {
+    padding: 8rem 3rem;
+}
+
+.courses-heading .courses-para {
+    color: var(--btn-1-bg-color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.courses-heading .courses-para::after {
+    content: "";
+    width: 12rem;
+    height: 0.2rem;
+    display: inline-block;
+    background: #2eca7f;
+    margin: 4px 10px;
+}
+
+.courses-heading .courses-sub-heading {
+    font-size: 4.4rem;
+    text-transform: capitalize;
+    margin-bottom: 6rem;
+}
+
+.courses-heading .courses-sub-heading span {
+    color: var(--secondary-heading-color);
+    text-decoration: underline;
+}
+
+.courses-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.courses-content .courses-image img {
+    width: 100%;
+    height: auto;
+}
+
+.courses-content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40.5rem;
+}
+
+
+.courses-content .courses-details {
+    padding: 3rem;
+}
+
+.courses-details .courses-stream-btn {
+    margin-bottom: 2rem;
+}
+
+.courses-details .courses-stream-btn .btn {
+    padding: 0.6rem 2rem;
+    background-color: var(--btn-1-bg-color);
+    color: var(--white-color);
+}
+.courses-details .courses-title  .sub-heading{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.courses-description .courses-div, .courses-description, .courses-details .courses-seats {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.courses-description .courses-div i, .courses-details .courses-seats i {
+    color: var(--btn-1-bg-color);
+    font-size: 1.6rem;
+}
+
+.courses-description .courses-div .para, .courses-details .courses-seats .para {
+    color: var(--btn-2-bg-color);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
