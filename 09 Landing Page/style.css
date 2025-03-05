@@ -205,6 +205,7 @@ li, a, i {
     width: 100%;
     height: 100vh;
     background: var(--main-bg-color);
+    padding: 3rem;
 }
 
 .section-content .hero-section-content {
@@ -424,7 +425,7 @@ li, a, i {
 /* achivement Section*/
 
 .achivement-container {
-    padding: 8rem 0;
+    padding: 8rem 3rem;
 }
 
 .achivement-card {
@@ -524,7 +525,7 @@ padding: 8rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -745,6 +746,8 @@ padding: 8rem 0;
 
 .view-courses-btn {
     margin: 5rem 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 .view-courses-btn .course-btn {
@@ -757,4 +760,115 @@ padding: 8rem 0;
 
 .view-courses-btn .course-btn:hover {
     background-color: var(--btn-2-bg-color);
+}
+
+.footer-section {
+    background-color: var(--btn-2-bg-color);
+    color: var(--white-color);
+    padding: 8rem 0 4rem;
+}
+
+.footer-section li, .footer-section a, .footer-section h2{
+    color: var(--white-color);
+}
+
+.footer-section .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 0 4rem 0;
+}
+
+.footer-content .footer-first-div .logo-image {
+    margin-bottom: 2rem;
+}
+.footer-content .footer-first-div .logo-image img{
+    width: 50%;
+    height: auto;
+}
+
+.footer-content .footer-first-div .logo-description {
+    width: 30rem;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.footer-first-div .social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-first-div .social-media i{
+    color: var(--white-color);
+    font-size: 3rem;
+}
+
+.footer-second-div .footer-sub-heading, .footer-third-div .footer-sub-heading {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.courses-list li a, .company-list li a{
+    line-height: 2;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.courses-list li a:hover, .company-list li a:hover {
+    color: var(--btn-1-bg-color);
+}
+
+.footer-fourth-div i {
+    color: var(--btn-1-bg-color);
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+.footer-fourth-div .contact-footer-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.contact-footer-div .footer-contact-title {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact-footer-div .para {
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+/* Footer copyright and Current Year */
+
+
+.footer-allright-section .footer-allright-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 500;
+    height: auto;
+}
+
+.footer-allright-section hr {
+        margin-top: 4rem;
+        color: yellow;
+        margin: 0 3rem;
+}
+
+.footer-allright-content .footer-allright {
+    display: flex;
+    gap: 1rem;
+    padding: 3rem;
+}
+.footer-allright-content .footer-terms {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
 }

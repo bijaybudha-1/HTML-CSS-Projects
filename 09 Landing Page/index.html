@@ -500,18 +500,137 @@
                             </div>
                         </div>
                     </div>
-                    <div class="view-courses-btn">
-                        <a href="" class="course-btn">View All Courses</a>
-                    </div>
-
+                </div>
+                <div class="view-courses-btn">
+                    <a href="" class="course-btn">View All Courses</a>
                 </div>
             </div>
         </div>
      </section>
 
 
-
+    
+     <!-- Footer Section -->
       
+     <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-first-div footer-div">
+                    <div class="logo-image">
+                        <img src="./Image/logo2.png" alt="">
+                    </div>
+                    <div class="logo-description">
+                        Loream ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui veneatis dignissim.
+                    </div>
+                    <div class="social-media">
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-second-div footer-div">
+                    <div class="courses-footer-div">
+                        <h2 class="sub-heading footer-sub-heading">Courses</h2>
+                        <ul class="courses-list">
+                            <li><a href="#">Creative Writing</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">SEO Business</a></li>
+                            <li><a href="#">Social Markting</a></li>
+                            <li><a href="#">Grapich Design</a></li>
+                            <li><a href="#">Websites Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-third-div footer-div">
+                    <div class="company-footer-div">
+                        <h2 class="sub-heading footer-sub-heading">Company</h2>
+                        <ul class="company-list">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Knowledge base</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                            <li><a href="#">community</a></li>
+                            <li><a href="#">Market API</a></li>
+                            <li><a href="#">Suport Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-fourth-div footer-div">
+                    <div class="contact-footer-div">
+                        <div class="footer-contact-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="footer-contact-description">
+                            <h3 class="footer-contact-title">Phone number</h3>
+                            <p class="para footer-para">+977 9814635755</p>
+                        </div>
+                    </div>
+                    <div class="contact-footer-div">
+                        <div class="footer-contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-description">
+                            <h3 class="footer-contact-title">Email Address</h3>
+                            <p class="para footer-para">bijaybudha48@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-footer-div">
+                        <div class="footer-contact-icon">
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+                        <div class="footer-contact-description">
+                            <h3 class="footer-contact-title">Office Address</h3>
+                            <p class="para footer-para">Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Footer copyright and Current Year -->
+
+
+        <div class="footer-allright-section">
+            <div class="container">
+                <hr>
+                <div class="footer-allright-content">
+                    <div class="footer-allright">
+                        <span>&copy;</span>
+                        <p id="time"></p>
+                    </div>
+                    <div class="footer-terms">
+                        <p class="terms-para">Terms of use</p>
+                        <p class="terms-para">Privacy policy</p>
+                        <p class="terms-para">cookie policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+
+
+     <script>
+        function updateTime() {
+            const date = new Date();
+            const currentYear = date.getFullYear()
+            document.getElementById('time').innerHTML =
+                `${currentYear}`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
 </body>
 </html>
