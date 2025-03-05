@@ -15,11 +15,19 @@
     --para-text-color: #888888;
     --border-bg-color: #b7b6b6;
     --icon-bg-color: #acf3d0;
+    --feature-bg-icon-color: #d9f1e5;;
     --smile-icon-color: #4154f1;
     --file-icon-color: #ee6c20;
     --headphone-icon-color: #15be56;
+    --learn-icon-color: #0081a7;
     --user-icon-color: #bb0852;
-    --sub-heading-bg-color: #dbf5e8;
+    --sub-heading-bg-color: #50faa5;
+    --expert-icon-color: #fb8500;
+    --team-icon-color: #03045e;
+    --strong-icon-color: #06d6a0;
+    --teacher-icon-color: #c9184a;
+    --course-icon-color: #ffd166;
+
 }
 
 html {
@@ -542,4 +550,108 @@ padding: 8rem 0;
     100% {
         transform: translate(-100%);
     }
+}
+
+
+/* feature Section */
+
+.feature-container {
+    padding: 8rem 0;
+}
+
+.feature-card {
+    display: flex;
+    column-gap: 3rem;
+    height: auto;
+    margin: 0 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 1.2rem;
+}
+
+.feature-heading .feature-para {
+    color: var(--btn-1-bg-color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.feature-heading .feature-para::after {
+    content: "";
+    width: 12rem;
+    height: 0.2rem;
+    display: inline-block;
+    background: #2eca7f;
+    margin: 4px 10px;
+}
+
+.feature-heading .feature-sub-heading {
+    font-size: 4.4rem;
+    text-transform: capitalize;
+    margin-bottom: 6rem;
+}
+
+.feature-heading .feature-sub-heading span {
+    color: var(--secondary-heading-color);
+    text-decoration: underline;
+}
+
+.feature-container .feature-content {
+    background-color: var(--white-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.feature-content:hover {
+    transform: translateY(-3%);
+}
+
+.feature-container .feature-content .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--feature-bg-icon-color);
+    border-radius: 50%;
+    padding: 2.5rem;
+}
+
+.feature-container .feature-content .card-icon .fa-book-open {
+    transform: scale(1.5);
+    color: var(--learn-icon-color);
+}
+.feature-container .feature-content .card-icon .fa-heart {
+    transform: scale(1.5);
+    color: var(--expert-icon-color);
+}
+.feature-container .feature-content .card-icon .fa-user {
+    transform: scale(1.5);
+    color: var(--team-icon-color);
+}
+.feature-container .feature-content .card-icon .fa-eye {
+    transform: scale(1.5);
+    color: var(--course-icon-color);
+}
+.feature-container .feature-content .card-icon .fa-lightbulb {
+    transform: scale(1.5);
+    color: var(--teacher-icon-color);
+}
+.feature-container .feature-content .card-icon .fa-envelope {
+    transform: scale(1.5);
+    color: var(--strong-icon-color);
+}
+
+.feature-container .card-title {
+    margin-left: 1.5rem;
+}
+.feature-container .card-title .card-heading {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.feature-container .card-title .para {
+    margin: 1rem 0 0 0;
 }
