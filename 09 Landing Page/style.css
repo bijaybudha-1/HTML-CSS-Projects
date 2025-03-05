@@ -743,3 +743,18 @@ padding: 8rem 0;
     font-weight: 500;
 }
 
+.view-courses-btn {
+    margin: 5rem 0 0;
+}
+
+.view-courses-btn .course-btn {
+    background-color: var(--btn-1-bg-color);
+    color: white;
+    padding: 1.5rem 4rem;
+    border-radius: 3rem;
+    transition: all 0.5s linear;
+}
+
+.view-courses-btn .course-btn:hover {
+    background-color: var(--btn-2-bg-color);
+}
